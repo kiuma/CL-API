@@ -1,0 +1,5 @@
+Currently works only with SBCL to add support to other CL implementations modify LAMBDALIST function in src/generator.lisp file
+
+USAGE:
+Call api-gen function to generate HTML API.
+Evenually redefine *api-css* before calling api-gen.
