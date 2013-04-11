@@ -31,7 +31,10 @@
   :name "cl-api"
   :author "Andrea Chiumenti"
   :description "Simple API HTML generator"
-  :depends-on (:closer-mop :alexandria :cl-ppcre)
+  :depends-on (:closer-mop 
+	       :alexandria 
+	       :cl-ppcre
+	       #+sbcl :sb-introspect)
   :components ((:module src
                         :components ((:file "packages")
                                      (:file "generator" :depends-on ("packages"))))))
